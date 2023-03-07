@@ -23,13 +23,12 @@
     padding: 50px;
     margin: 0px;
   }
-span{
-  padding: 0px;
-  margin: 0px;
+  section{
+    display: grid;
+    place-items :center;
+    align-content: center;
+    min-height: 100vh;
 }
-
-
-
 </style>
 <link rel="stylesheet" href="style.css">
 <script src="app.js"></script>
@@ -73,18 +72,20 @@ span{
       </div>
     </div>
   </nav>
-  <section class="title" >
-      <h2>Champion Airline Services</h2>
-  </section>
   <section>
     <div class="login">
-      <span style="text-align: center;"><h3>Login</h3></span>
-      <label for="username">Username :</label>
+      <span><h3>Create an account</h3></span>
+      <span><h6>Login info</h6></span>
+      <label for="username">Enter valid Username :</label>
       <input type="text" name="username" id="username" style="padding: 5px; margin: 5px;">
       <br>
-      <label for="password">Password :</label>
-      <input type="password" name="password" id="password" style="padding: 5px; margin: 5px;">
+      <label for="password">Chose a Secure Password :</label>
+      <input type="password" name="password" id="password" style="padding: 5px; margin: 5px; block-size: 50px;">
+      <br>
+      <label for="username">Provide an Email id :</label>
+      <input type="text" name="username" id="username" style="padding: 5px; margin: 5px;">
       <br><button type="button" class="btn btn-light" style="margin: 5px;">Submit</button>
+
       <br>
       <br>
       <input type="radio" name="option" id="" style="margin: 5px; padding: 5px;"> <label for="" style="margin: 3px; padding: 3px;">Admin</label>
